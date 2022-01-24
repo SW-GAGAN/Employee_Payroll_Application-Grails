@@ -1,0 +1,182 @@
+.form-content {
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.form {
+    width: 65%;
+    padding: 44px 60px;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px grey;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.form-head {
+    font: normal normal bold 24px/37px Roboto;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.label {
+    min-width: 140px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: "Robonto", serif;
+}
+.example-full-width {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+.checkbox {
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 5px;
+    font: normal normal normal 16px Roboto;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+}
+
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    font: normal normal normal 20px/26px Roboto;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #969696;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submitButton {
+    border: 1px solid #969696;
+    margin-right: 30px;
+}
+
+.cancelButton {
+    border: 1px solid #969696;
+    text-decoration: none;
+    text-align: center;
+}
+
+.submitButton:hover{
+    background: #82A70C ;
+    border: 1px solid #969696;
+    color: #FFFFFF;
+}
+
+.cancelButton:hover,.resetButton:hover{
+    background: #707070;
+    border: 1px solid #969696;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 960px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        margin-top: 10px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .uploadButton {
+        justify-content: flex-start;
+    }
+    .profile-radio-button {
+        flex-flow: wrap;
+    }
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton {
+        margin: 0;
+    }
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
