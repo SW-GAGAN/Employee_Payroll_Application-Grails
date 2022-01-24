@@ -98,8 +98,11 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: create-drop
-            url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+      dbCreate: update
+            driverClassName: com.mysql.cj.jdbc.Driver
+            username: ${db_username}
+            password: ${db_password}
+            url: "jdbc:mysql://localhost:3306/employee_payroll_service"   
     test:
         dataSource:
             dbCreate: update
